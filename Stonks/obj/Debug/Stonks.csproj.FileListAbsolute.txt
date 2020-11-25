@@ -1,0 +1,10 @@
+C:\Users\gabri\source\repos\Stonks\Stonks\bin\Debug\Stonks.exe.config
+C:\Users\gabri\source\repos\Stonks\Stonks\bin\Debug\Stonks.exe
+C:\Users\gabri\source\repos\Stonks\Stonks\bin\Debug\Stonks.pdb
+C:\Users\gabri\source\repos\Stonks\Stonks\obj\Debug\Stonks.csprojAssemblyReference.cache
+C:\Users\gabri\source\repos\Stonks\Stonks\obj\Debug\Stonks.Form1.resources
+C:\Users\gabri\source\repos\Stonks\Stonks\obj\Debug\Stonks.Properties.Resources.resources
+C:\Users\gabri\source\repos\Stonks\Stonks\obj\Debug\Stonks.csproj.GenerateResource.cache
+C:\Users\gabri\source\repos\Stonks\Stonks\obj\Debug\Stonks.csproj.CoreCompileInputs.cache
+C:\Users\gabri\source\repos\Stonks\Stonks\obj\Debug\Stonks.exe
+C:\Users\gabri\source\repos\Stonks\Stonks\obj\Debug\Stonks.pdb

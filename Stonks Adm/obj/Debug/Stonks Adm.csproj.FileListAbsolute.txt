@@ -1,0 +1,14 @@
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\bin\Debug\Stonks Adm.exe.config
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\bin\Debug\Stonks Adm.exe
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\bin\Debug\Stonks Adm.pdb
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\obj\Debug\Stonks Adm.csprojAssemblyReference.cache
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\obj\Debug\Stonks_Adm.Properties.Resources.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\obj\Debug\Stonks Adm.csproj.GenerateResource.cache
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\obj\Debug\Stonks Adm.csproj.CoreCompileInputs.cache
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\obj\Debug\Stonks Adm.exe
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\obj\Debug\Stonks Adm.pdb
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\obj\Debug\Stonks Adm.csproj.CopyComplete
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\obj\Debug\Stonks_Adm.Forms.Index.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Adm\obj\Debug\Stonks_Adm.Forms.FormProduto.resources

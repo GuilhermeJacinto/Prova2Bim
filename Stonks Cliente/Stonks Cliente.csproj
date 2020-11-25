@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17867CD9-1FB9-401B-8E96-44FE69AE1A6F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Stonks_Cliente</RootNamespace>
+    <AssemblyName>Stonks Cliente</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communs\Convercao.cs" />
+    <Compile Include="Communs\Json.cs" />
+    <Compile Include="Connected Services\ServiceReferenceCep\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Caixa.cs" />
+    <Compile Include="Entity\Cliente.cs" />
+    <Compile Include="Entity\Delivery.cs" />
+    <Compile Include="Entity\Login.cs" />
+    <Compile Include="Entity\Produto.cs" />
+    <Compile Include="Forms\Cardapio\FormBebidaGelada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormBebidaGelada.Designer.cs">
+      <DependentUpon>FormBebidaGelada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormBebidaQuente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormBebidaQuente.Designer.cs">
+      <DependentUpon>FormBebidaQuente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormCardapio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormCardapio.Designer.cs">
+      <DependentUpon>FormCardapio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormConfeitaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormConfeitaria.Designer.cs">
+      <DependentUpon>FormConfeitaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormLanches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormLanches.Designer.cs">
+      <DependentUpon>FormLanches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormPanificacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormPanificacao.Designer.cs">
+      <DependentUpon>FormPanificacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormSalgados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cardapio\FormSalgados.Designer.cs">
+      <DependentUpon>FormSalgados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Carrinho\FormCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Carrinho\FormCaixa.Designer.cs">
+      <DependentUpon>FormCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Carrinho\FormCarrinho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Carrinho\FormCarrinho.Designer.cs">
+      <DependentUpon>FormCarrinho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormCadEndereco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormCadEndereco.Designer.cs">
+      <DependentUpon>FormCadEndereco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormEditarDadosPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormEditarDadosPerfil.Designer.cs">
+      <DependentUpon>FormEditarDadosPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormLoginCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormLoginCliente.Designer.cs">
+      <DependentUpon>FormLoginCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormCadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormCadastroCliente.Designer.cs">
+      <DependentUpon>FormCadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormPerfilTrue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormPerfilTrue.Designer.cs">
+      <DependentUpon>FormPerfilTrue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormsEditarEndereco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormsEditarEndereco.Designer.cs">
+      <DependentUpon>FormsEditarEndereco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormsMeusEnderecos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormsMeusEnderecos.Designer.cs">
+      <DependentUpon>FormsMeusEnderecos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormsPerfilFalse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Perfil\FormsPerfilFalse.Designer.cs">
+      <DependentUpon>FormsPerfilFalse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lists\ListCarrinho.cs" />
+    <Compile Include="Lists\ListProdutos.cs" />
+    <Compile Include="Lists\ListCliente.cs" />
+    <Compile Include="Lists\ListDelivery.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Cardapio\FormBebidaGelada.resx">
+      <DependentUpon>FormBebidaGelada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cardapio\FormBebidaQuente.resx">
+      <DependentUpon>FormBebidaQuente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cardapio\FormCardapio.resx">
+      <DependentUpon>FormCardapio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cardapio\FormConfeitaria.resx">
+      <DependentUpon>FormConfeitaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cardapio\FormLanches.resx">
+      <DependentUpon>FormLanches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cardapio\FormPanificacao.resx">
+      <DependentUpon>FormPanificacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cardapio\FormSalgados.resx">
+      <DependentUpon>FormSalgados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Carrinho\FormCaixa.resx">
+      <DependentUpon>FormCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Carrinho\FormCarrinho.resx">
+      <DependentUpon>FormCarrinho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Perfil\FormCadEndereco.resx">
+      <DependentUpon>FormCadEndereco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Perfil\FormEditarDadosPerfil.resx">
+      <DependentUpon>FormEditarDadosPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Perfil\FormLoginCliente.resx">
+      <DependentUpon>FormLoginCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Perfil\FormCadastroCliente.resx">
+      <DependentUpon>FormCadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Perfil\FormPerfilTrue.resx">
+      <DependentUpon>FormPerfilTrue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Perfil\FormsEditarEndereco.resx">
+      <DependentUpon>FormsEditarEndereco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Perfil\FormsMeusEnderecos.resx">
+      <DependentUpon>FormsMeusEnderecos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Perfil\FormsPerfilFalse.resx">
+      <DependentUpon>FormsPerfilFalse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Connected Services\ServiceReferenceCep\AtendeClienteService.wsdl" />
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.atualizaPagamentoNaEntregaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.atualizaRemessaAgrupadaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.bloquearObjetoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.buscaClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.buscaContratoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.buscaDataAtualResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.buscaOpcoesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.buscaPagamentoEntregaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.buscaServicosAdicionaisAtivosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.buscaServicosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.buscaServicosValorDeclaradoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.buscaServicosXServicosAdicionaisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.buscaTarifaValeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.calculaTarifaServicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.cancelarObjetoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.cancelarPedidoScolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.clienteERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.consultaCEPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.contratoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.dimensaoTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.embalagemLRSMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.enderecoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.fechaPlpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.fechaPlpVariosServicosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.geraDigitoVerificadorEtiquetasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.getStatusCartaoPostagemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.getStatusPLPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.integrarUsuarioScolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.mensagemParametrizadaTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.obterClienteAtualizacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.obterEmbalagemLRSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.obterMensagemParametrizadaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.pesquisarDimensoesServicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.pesquisarEmbalagensPorServicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.pesquisarParametrosPorDescricaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.pesquisarServicosAdicionaisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.retornoCancelamento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.servicoAdicionalTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.servicoAdicionalXML.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.servicoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.solicitaEtiquetasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.solicitaPLPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.solicitarPostagemScolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.solicitaXmlPlpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.statusCartao.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.statusPlp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.tipoEmbalagem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.valePostal.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.validaEtiquetaPLPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.validaPlpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.validarPostagemReversaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.validarPostagemSimultaneaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.verificaDisponibilidadeServicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.verificaModalTransporteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReferenceCep\Stonks_Cliente.ServiceReferenceCep.VerificaSeTodosObjetosCanceladosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReferenceCep\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceCep\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceCep\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceCep\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

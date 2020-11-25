@@ -1,0 +1,31 @@
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\bin\Debug\Stonks Cliente.exe.config
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\bin\Debug\Stonks Cliente.exe
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\bin\Debug\Stonks Cliente.pdb
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks Cliente.csprojAssemblyReference.cache
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Index.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Properties.Resources.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks Cliente.csproj.GenerateResource.cache
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks Cliente.csproj.CoreCompileInputs.cache
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks Cliente.exe
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks Cliente.pdb
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks Cliente.csproj.CopyComplete
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Perfil.FormLoginCliente.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Perfil.FormPerfilTrue.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Perfil.FormsPerfilFalse.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Perfil.FormCadastroCliente.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Perfil.FormCadEndereco.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Perfil.FormsMeusEnderecos.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Perfil.FormsEditarEndereco.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Perfil.FormEditarDadosPerfil.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Cardapio.FormPanificacao.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Cardapio.FormCardapio.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Cardapio.FormBebidaGelada.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Cardapio.FormBebidaQuente.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Cardapio.FormConfeitaria.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Cardapio.FormLanches.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Cardapio.FormSalgados.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Carrinho.FormCarrinho.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.FormHome.resources
+C:\Users\gabri\source\repos\Stonks\Stonks Cliente\obj\Debug\Stonks_Cliente.Forms.Carrinho.FormCaixa.resources
